@@ -1,3 +1,11 @@
+<script lang="ts">
+    import type { Category } from '$lib/types/product'; 
+
+    let { categories }: { categories: Category[] } = $props();
+
+    let showCategory = $state(false);
+</script>
+
 <nav class="sticky top-0 z-50 w-full bg-white border-b border-gray-100 shadow-sm">
   <div class="container mx-auto px-16 h-18 flex items-center justify-center gap-4 md:gap-8">
     
@@ -7,8 +15,31 @@
       </span>
     </a>
 
-    <div class="hidden md:block cursor-pointer hover:bg-gray-100 px-2 py-1 rounded transition text-l text-gray-600 font-medium">
-      Categories
+    <div class="relative hidden md:block">
+        
+        <button 
+            onclick={() => showCategory = !showCategory}
+            class="flex items-center gap-1 cursor-pointer hover:bg-gray-100 px-3 py-2 rounded transition text-l text-gray-600 font-medium"
+        >
+            Categories
+        </button>
+
+        {#if showCategory}
+
+            <div class="absolute top-full left-0 mt-2 w-[600px] bg-white border border-gray-200 shadow-xl rounded-lg z-20 p-4">
+                
+                <div class="grid grid-cols-3 gap-2">
+                    {#each categories as cat}
+                        <a 
+                            href="/category/{cat.slug}" 
+                            onclick={() => showCategory = false}
+                            class="text-sm text-gray-600 hover:text-green-600 hover:bg-green-50 px-2 py-1.5 rounded transition truncate capitalize"
+                        >
+                            {cat.name} </a>
+                    {/each}
+                </div>
+            </div>
+        {/if}
     </div>
 
     <form action="/search" class="flex-1 w-full max-w-4xl">

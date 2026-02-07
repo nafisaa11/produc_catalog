@@ -51,4 +51,10 @@ interface ProductResponse{
     limit: number;
 }
 
-export type { Product, ProductResponse};
+interface Category {
+  slug: string;
+  name: string;
+  url: string;
+}
+
+export type { Product, ProductResponse, Category};
