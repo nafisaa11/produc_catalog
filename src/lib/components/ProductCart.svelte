@@ -4,7 +4,7 @@
   export let product: Product;
 </script>
 
-<a href="#" class="block rounded-lg p-4 shadow-xs shadow-indigo-100">
+<a href="/product/{product.id}" class="block rounded-lg p-4 shadow-xs shadow-indigo-100">
         
         <div class="relative w-full h-56 overflow-hidden rounded-md">
         <img 
