@@ -1,11 +1,17 @@
-<h1 class="text-xl font-bold ">
-  Hello world!
-</h1>
+<script>
+  import ProductCart from '$lib/components/ProductCart.svelte';
 
-<style lang="postcss">
-  @reference "tailwindcss";
+  export let data;
+</script>
 
-  :global(html) {
-    background-color: theme(--color-gray-100);
-  }
-</style>
+
+<div class="container mx-auto px-32">
+<div class="grid grid-cols-1 gap-4 lg:grid-cols-6 lg:gap-4">
+{#each data.products as product}
+  <ProductCart
+   product={product}
+  />
+{/each}
+
+</div>
+</div>

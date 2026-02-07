@@ -50,3 +50,5 @@ interface ProductResponse{
     skip: number;
     limit: number;
 }
+
+export type { Product, ProductResponse};
