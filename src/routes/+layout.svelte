@@ -3,8 +3,10 @@
 
 	let { children } = $props();
 	import "../app.css";
+	import Navbar from '$lib/components/navbar.svelte';
 </script>
 
+<Navbar />
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
