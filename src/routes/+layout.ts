@@ -5,7 +5,7 @@ export const load = (async ({ fetch }) => {
   const response = await fetch("https://dummyjson.com/products/categories");
 
   const categories: Category[] = await response.json();
-  
+
   return {
     categories,
   };

@@ -57,4 +57,5 @@ interface Category {
   url: string;
 }
 
+
 export type { Product, ProductResponse, Category};
