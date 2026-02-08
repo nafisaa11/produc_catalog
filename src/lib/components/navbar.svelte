@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { Category } from "$lib/types/product";
+  import { page } from "$app/state";
 
   let { categories }: { categories: Category[] } = $props();
 
@@ -68,7 +69,8 @@
         <input
           type="search"
           name="q"
-          placeholder="Cari di Tokopedia"
+          value={page.url.searchParams.get("q") || ""}
+          placeholder="Search products..."
           class="block w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg
                  text-gray-900 placeholder-gray-400 bg-gray-50
                  focus:outline-none focus:ring-1 focus:ring-green-500 focus:border-green-500
