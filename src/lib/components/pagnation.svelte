@@ -47,7 +47,7 @@
           href={getPageUrl(pageNum)}
           class="flex items-center justify-center active:scale-95 w-9 md:w-12 h-9 md:h-12 aspect-square rounded-md transition-all border
                 {currentPage === pageNum
-            ? 'bg-green-600 text-white border-green-600'
+            ? 'bg-indigo-600 text-white border-indigo-600'
             : 'bg-white border-gray-200 text-gray-600 hover:bg-gray-100/70'}"
         >
           {pageNum}

@@ -8,8 +8,8 @@
 <div class="container mx-auto px-32">
   <div class="mb-8">
     {#if data.searchQuery}
-      <h1 class="text-2xl font-medium text-gray-800">
-        Hasil pencarian untuk <span class="font-bold text-green-600"
+      <h1 class="text-2xl font-medium text-gray-800 pt-4">
+        Hasil pencarian untuk <span class="font-bold text-indigo-600"
           >"{data.searchQuery}"</span
         >
       </h1>

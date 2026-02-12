@@ -14,7 +14,7 @@
     class="container mx-auto px-16 h-18 flex items-center justify-center gap-4 md:gap-8"
   >
     <a href="/" class="flex items-center gap-1">
-      <span class="text-2xl font-bold text-green-600 tracking-tight">
+      <span class="text-2xl font-bold text-indigo-600 tracking-tight">
         MyCatalog
       </span>
     </a>
@@ -36,7 +36,7 @@
               <a
                 href="/category/{cat.slug}"
                 onclick={() => (showCategory = false)}
-                class="text-sm text-gray-600 hover:text-green-600 hover:bg-green-50 px-2 py-1.5 rounded transition truncate capitalize"
+                class="text-sm text-gray-600 hover:text-indigo-600 hover:bg-indigo-50 px-2 py-1.5 rounded transition truncate capitalize"
               >
                 {cat.name}
               </a>
@@ -52,7 +52,7 @@
           class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
         >
           <svg
-            class="w-5 h-5 text-gray-400 group-focus-within:text-green-600"
+            class="w-5 h-5 text-gray-400 group-focus-within:text-indigo-600"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -73,7 +73,7 @@
           placeholder="Search products..."
           class="block w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg
                  text-gray-900 placeholder-gray-400 bg-gray-50
-                 focus:outline-none focus:ring-1 focus:ring-green-500 focus:border-green-500
+                 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500
                  focus:bg-white transition-colors sm:text-sm"
         />
       </div>

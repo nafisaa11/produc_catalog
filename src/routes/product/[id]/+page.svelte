@@ -20,10 +20,13 @@
   }
 </script>
 
-<div class="max-w-7xl mx-auto px-4 py-6 md:py-10 text-gray-800">
+<div class="max-w-7xl mx-auto px-4 py-6 md:py-4 text-gray-800 ">
+
   <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
     <div class="lg:col-span-4">
-      <div class="border rounded-lg overflow-hidden mb-4 bg-white relative">
+      <div
+        class="border border-indigo-600 rounded-lg overflow-hidden mb-4 bg-white relative"
+      >
         <img
           src={selectedImage}
           alt={product.title}
@@ -43,7 +46,7 @@
             on:click={() => (selectedImage = img)}
             class="border-2 rounded-md overflow-hidden w-16 h-16 flex-shrink-0
                             {selectedImage === img
-              ? 'border-green-600'
+              ? 'border-indigo-600'
               : 'border-gray-200 hover:border-gray-400'}"
           >
             <img src={img} alt="thumb" class="w-full h-full object-cover" />
@@ -54,7 +57,7 @@
 
     <div class="lg:col-span-4">
       <div class="flex items-center gap-2 mb-2 text-sm text-gray-500">
-        <span class="font-bold text-green-600"
+        <span class="font-bold text-indigo-600"
           >{product.brand || "No Brand"}</span
         >
         <span>•</span>
@@ -102,7 +105,7 @@
           <h3 class="font-bold text-gray-900 mb-3">Product Details</h3>
           <div class="grid grid-cols-[140px_1fr] gap-y-3">
             <span class="text-gray-500">Status</span>
-            <span class="font-medium text-green-600"
+            <span class="font-medium text-indigo-600"
               >{product.availabilityStatus}</span
             >
 

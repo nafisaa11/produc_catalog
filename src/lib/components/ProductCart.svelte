@@ -6,22 +6,24 @@
 
 <a
   href="/product/{product.id}"
-  class="block rounded-lg p-4 shadow-xs shadow-indigo-100"
+  class="block rounded-xl p-4 mt-8 bg-white border border-gray-200 hover:border-indigo-600 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-100/50"
 >
-  <div class="relative w-full h-56 overflow-hidden rounded-md">
+  <div class="relative rounded-xl w-full h-50 overflow-hidden">
     <img
       alt={product.title}
       src={product.thumbnail}
-      class="h-56 w-full rounded-md object-cover"
+      class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"
     />
   </div>
 
   <div class="mt-4">
-    <p class="text-xs text-gray-500 uppercase tracking-wide mb-1">
+    <p
+      class="text-xs font-semibold text-indigo-600 uppercase tracking-wide mb-1"
+    >
       {product.category}
     </p>
 
-    <h3 class="text-lg font-medium text-gray-900 truncate">
+    <h3 class="text-lg font-medium text-gray-900 truncate hover:text-indigo-600">
       {product.title}
     </h3>
 
