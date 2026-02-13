@@ -12,7 +12,7 @@
     </h1>
 
     <p class="text-lg text-gray-600">
-      Explore our curated collection of {data.total} premium products
+     Explore our curated collection of premium products.
     </p>
   </div>
 
